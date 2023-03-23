@@ -1,0 +1,225 @@
+/*Variables globales*/
+$color-tituloprincipal: rgb(135, 181, 212);
+
+/*Mixin*/
+@mixin size ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Google fonts*/
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+    .tituloprincipal {
+        color: $color-tituloprincipal;
+        font-family: 'Patrick Hand', cursive;
+        text-align: center;
+    }
+
+    .titulosecundario {
+
+        color: rgb(37, 114, 185);
+        font-size: x-large;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+
+    .card {
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+
+        p {
+            text-align: center;
+            font-size: x-large;
+            color: rgb(161, 161, 209);
+        }
+    }
+
+    .img-principal {
+        @include size(100%, 50%);
+        right: 50%;
+    }
+
+    .video {
+        @include size(100%, 100%);
+    }
+
+    .img-secundarias {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            border: 50px;
+            @include size(auto, 200px);
+        }
+
+        .sabanas1 {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(2, 2);
+            }
+        }
+
+        .sabanas2 {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(2, 2);
+            }
+        }
+
+        .Toallones1 {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(2, 2);
+            }
+        }
+
+        .toallasdemano1 {
+            transition: 1s;
+
+            &:hover {
+                transform: scale(2, 2);
+            }
+        }
+    }
+}
+
+/*Footer*/
+
+footer {
+    padding-top: 30px;
+
+    p {
+        font-size: x-large;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+
+        .listaFooter {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+/*ENVIO*/
+
+.itemFormulario {
+    padding: 20px;
+}
+
+.tituloDatos {
+    text-align: center;
+    background-color: beige;
+}
+
+
+.tituloCompra {
+    @extend .tituloDatos;
+}
+
+.tituloComentario {
+    @extend .tituloDatos;
+}
+
+.comentario {
+    margin-left: 100px;
+}
+
+
+
+/*Pagina Nosotros*/
+.card {
+
+    img {
+        @include size(200px, auto);
+        margin-left: 600px
+    }
+}
+
+
+/*PRODUCTOS-Tabla*/
+.tablaProductos {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    .tituloTabla {
+        margin-top: auto;
+    }
+
+    td {
+        border: 2px solid rgb(224, 127, 187);
+    }
+
+    th {
+        color: rgb(187, 146, 207);
+        font-size: x-large;
+    }
+}
+
+
+
+
+
+/*Productos*/
+
+
+.imagenesProductos {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    .sabanas {
+        display: flex;
+        flex-direction: column;
+        transition: 3s;
+
+        &:hover {
+            transform: scale(2, 2);
+        }
+
+        .tituloSabanas {
+            text-align: center;
+        }
+    }
+
+    .toallones {
+        transition: 3s;
+
+        &:hover {
+            transform: scale(2, 2);
+        }
+    }
+
+    .toallasDeMano {
+        transition: 3s;
+
+        &:hover {
+            transform: scale(2, 2);
+        }
+    }
+}
+
+
+/*Ubicacion*/
+
+.iframe {
+    @include size(50%, 50%);
+}

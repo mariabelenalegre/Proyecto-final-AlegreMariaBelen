@@ -1,0 +1,167 @@
+/*Variables globales*/
+/*Mixin*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Google fonts*/
+body {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+body .tituloprincipal {
+  color: rgb(135, 181, 212);
+  font-family: "Patrick Hand", cursive;
+  text-align: center;
+}
+body .titulosecundario {
+  color: rgb(37, 114, 185);
+  font-size: x-large;
+  text-align: center;
+}
+body h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+body .card {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+body .card p {
+  text-align: center;
+  font-size: x-large;
+  color: rgb(161, 161, 209);
+}
+body .img-principal {
+  width: 100%;
+  height: 50%;
+  right: 50%;
+}
+body .video {
+  width: 100%;
+  height: 100%;
+}
+body .img-secundarias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .img-secundarias img {
+  border: 50px;
+  width: auto;
+  height: 200px;
+}
+body .img-secundarias .sabanas1 {
+  transition: 1s;
+}
+body .img-secundarias .sabanas1:hover {
+  transform: scale(2, 2);
+}
+body .img-secundarias .sabanas2 {
+  transition: 1s;
+}
+body .img-secundarias .sabanas2:hover {
+  transform: scale(2, 2);
+}
+body .img-secundarias .Toallones1 {
+  transition: 1s;
+}
+body .img-secundarias .Toallones1:hover {
+  transform: scale(2, 2);
+}
+body .img-secundarias .toallasdemano1 {
+  transition: 1s;
+}
+body .img-secundarias .toallasdemano1:hover {
+  transform: scale(2, 2);
+}
+
+/*Footer*/
+footer {
+  padding-top: 30px;
+}
+footer p {
+  font-size: x-large;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+footer p .listaFooter {
+  display: flex;
+  flex-direction: column;
+}
+
+/*ENVIO*/
+.itemFormulario {
+  padding: 20px;
+}
+
+.tituloDatos, .tituloComentario, .tituloCompra {
+  text-align: center;
+  background-color: beige;
+}
+
+.comentario {
+  margin-left: 100px;
+}
+
+/*Pagina Nosotros*/
+.card img {
+  width: 200px;
+  height: auto;
+  margin-left: 600px;
+}
+
+/*PRODUCTOS-Tabla*/
+.tablaProductos {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.tablaProductos .tituloTabla {
+  margin-top: auto;
+}
+.tablaProductos td {
+  border: 2px solid rgb(224, 127, 187);
+}
+.tablaProductos th {
+  color: rgb(187, 146, 207);
+  font-size: x-large;
+}
+
+/*Productos*/
+.imagenesProductos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.imagenesProductos .sabanas {
+  display: flex;
+  flex-direction: column;
+  transition: 3s;
+}
+.imagenesProductos .sabanas:hover {
+  transform: scale(2, 2);
+}
+.imagenesProductos .sabanas .tituloSabanas {
+  text-align: center;
+}
+.imagenesProductos .toallones {
+  transition: 3s;
+}
+.imagenesProductos .toallones:hover {
+  transform: scale(2, 2);
+}
+.imagenesProductos .toallasDeMano {
+  transition: 3s;
+}
+.imagenesProductos .toallasDeMano:hover {
+  transform: scale(2, 2);
+}
+
+/*Ubicacion*/
+.iframe {
+  width: 50%;
+  height: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

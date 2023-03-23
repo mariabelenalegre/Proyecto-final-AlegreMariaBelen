@@ -7,116 +7,148 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
 
     <!--link a hoja de estilo-->
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../styles/scss/style.css">
 
 
-    <title>Document</title>
-     <!--google fonts-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,500;1,900&display=swap"
-         rel="stylesheet">
-         
+    <title>Envios/Home-Deco</title>
+       <!--google fonts-->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Righteous&family=Yanone+Kaffeesatz:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 <!--Nombre pestaña-->
 <title>Blanqueria</title>
 <!--Imagen pestaña-->
 <link rel="shortcut icon" href="../71Fa3+douIL._AC_SX679_.jpg" type="image/x-icon">
+<!--bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">  
 
 
 <body>
 
 
-    <h1 class="tituloprincipal">BLANQUERIA</h1>
+    <h1 class="tituloprincipal">Home-Deco</h1>
 
 
-    <nav>
-        <!--Link hacia home-->
-        <a href="../index.html">Home</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
 
-        <!--Link hacia Nosotros-->
-        <a href="./Nosotros.html">Nosotros</a>
+                    <!--Link hacia home-->
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 
-        <!--Link hacia Productos-->
-        <a href="./Productos.html">Productos</a>
+                    <!--Link hacia Nosotros-->
+                    <a class="nav-link" href="../pages/Nosotros.html">Nosotros</a>
 
-        <!--Link hacia Envios-->
-        <a href="./Envios.html">Envios</a>
+                    <!--Link hacia Productos-->
+                    <a class="nav-link" href="../pages/Productos.html">Productos</a>
 
-        <!--Link hacia Ubicacion-->
-        <a href="./Ubicacion.html">Ubicacion</a>
+                    <!--Link hacia Envios-->
+                    <a class="nav-link" href="../pages/Envios.html">Envíos</a>
+
+                    <!--Link hacia Ubicacion-->
+                    <a class="nav-link" href="../pages/Ubicacion.html">Ubicación</a>
 
 
+
+                </div>
+            </div>
+        </div>
     </nav>
 
 
 
+
     <!--Titulo-->
-    <h1>Envios a todo el pais</h1>
+    <h1>Envíos a todo el país</h1>
     <br>
 
     <main>
         <!--Formulario de Ciente-->
         <form>
             <fieldset>
-                <label for="Nombre">Nombre</label>
-                <input type="text" id="nombre">
-                <br>
-
-                <label for="Numero Celular">Numero celular</label>
+                <h2 class="tituloDatos">Datos personales</h2>
+                <div class="itemFormulario">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" id="nombre">
+                </div>
+             <div class="itemFormulario">
+                <label for="Numero Celular">Número de celular</label>
                 <input type="text" id="Numero celular" required>
-                <br>
+             </div>
 
+              <div class="itemFormulario">
                 <label for="mail">mail</label>
                 <input type="email" id="mail">
-
+              </div>
+               
             </fieldset>
 
             <fieldset>
 
-                <label for="Provincia">Privincia</label>
-                <input type="text" id="Provincia" required>
-                <br>
-
-                <label for="Ciudad">Ciudad</label>
-                <input type="text" id="Ciudad" required>
-                <br>
-
-                <label for="Codigo Postal">Codigo Postal</label>
-                <input type="text" id="Codigo Postal">
-                <br>
-
+                <div class="itemFormulario">
+                    <label for="Provincia">Provincia</label>
+                    <input type="text" id="Provincia" required>
+                </div>
+       
+           <div class="itemFormulario">
+            <label for="Ciudad">Ciudad</label>
+            <input type="text" id="Ciudad" required>
+           </div>
+           <div class="itemFormulario">
+            <label for="Codigo Postal">Código Postal</label>
+            <input type="text" id="Codigo Postal">
+           </div>
+                
+        
             </fieldset>
-            <br>
+            
 
             <fieldset>
-                <label for="Direccion">Direccion</label>
+            <div class="itemFormulario">
+                <label for="Direccion">Dirección</label>
                 <input type="text" id="Direccion" required>
-                <br>
+            </div>   
 
             </fieldset>
 
 
             <fieldset>
-                <p>Selecciona tu compra</p>
+                <h2 class="tituloCompra">Selecciona tu compra</h2>
+               
+                <div class="itemFormulario">
+                    <label for="sabanas">sabanas</label>
+                    <input type="checkbox" name="sabanas" id="sabanas">
+                </div>
 
-                <label for="sabanas">sabanas</label>
-                <input type="checkbox" name="sabanas" id="sabanas">
+                <div class="itemFormulario">
+                    <label for="toallones">toallones</label>
+                    <input type="checkbox" name="toallones" id="toallones">
+                </div>
 
-                <label for="toallones">toallones</label>
-                <input type="checkbox" name="toallones" id="toallones">
-
-                <label for="toallas de mano">toallas de mano</label>
-                <input type="checkbox" name="toallas de mano" id="toallas de mano">
+                <div class="itemFormulario">
+                    <label for="toallas de mano">toallas de mano</label> 
+                 <input type="checkbox" name="toallas de mano" id="toallas de mano">
 
 
             </fieldset>
 
             <!--Cuadro para comentario-->
+            <h2 class="tituloComentario">Dejanos tu Comentario</h2>
+            
+            <h3 class="comentario">
+                <textarea name="comentario" id="comentario" cols="100" rows="10"></textarea>
 
-            <label for="Comentario">Comentario</label>
-            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
 
+            </h3>
         </form>
         <br>
         <!--Boton para Enviar-->
@@ -135,17 +167,17 @@
         <fieldset>
             <!--Pie de pagina-->
             <p>Contactanos</p>
-            <ul>
-                <li>facebook</li>
-                <li>instagram</li>
-
-            </ul>
+            <ul class="listaFooter">
+                <a href="https://www.facebook.com/">Facebook</a> 
+                <a href="https://www.instagram.com/">Instagram</a>
+             </ul>
 
         </fieldset>
 
     </footer>
 
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js
+    ">
 </body>
 
 </html>
