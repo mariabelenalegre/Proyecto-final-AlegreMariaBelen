@@ -43,12 +43,18 @@ body .video {
 body .img-secundarias {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 840px) {
+  body .img-secundarias {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body .img-secundarias img {
   border: 50px;
   width: auto;
-  height: 200px;
+  height: 150px;
 }
 body .img-secundarias .sabanas1 {
   transition: 1s;
@@ -64,12 +70,14 @@ body .img-secundarias .sabanas2:hover {
 }
 body .img-secundarias .Toallones1 {
   transition: 1s;
+  justify-self: center;
 }
 body .img-secundarias .Toallones1:hover {
   transform: scale(2, 2);
 }
 body .img-secundarias .toallasdemano1 {
   transition: 1s;
+  justify-self: center;
 }
 body .img-secundarias .toallasdemano1:hover {
   transform: scale(2, 2);
@@ -83,7 +91,7 @@ footer p {
   font-size: x-large;
   font-family: "Yanone Kaffeesatz", sans-serif;
 }
-footer p .listaFooter {
+footer .listaFooter {
   display: flex;
   flex-direction: column;
 }
@@ -99,14 +107,17 @@ footer p .listaFooter {
 }
 
 .comentario {
-  margin-left: 100px;
+  justify-content: center;
 }
 
 /*Pagina Nosotros*/
+.card {
+  display: grid;
+  align-items: center;
+}
 .card img {
   width: 200px;
   height: auto;
-  margin-left: 600px;
 }
 
 /*PRODUCTOS-Tabla*/
@@ -133,6 +144,16 @@ footer p .listaFooter {
   align-items: center;
   justify-content: space-around;
   text-align: center;
+}
+.imagenesProductos img {
+  border: 50px;
+  width: auto;
+  height: 150px;
+}
+@media screen and (max-width: 480px) {
+  .imagenesProductos {
+    flex-direction: column;
+  }
 }
 .imagenesProductos .sabanas {
   display: flex;
